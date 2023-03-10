@@ -1,0 +1,114 @@
+<resources>
+    <string name="app_name">Ganak</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="txt_new_user">New User ? Register</string>
+    <string name="txt_forgot_pass">Forgot password ?</string>
+    <string name="txt_login">USER LOGIN</string>
+    <string name="otp_description">An OTP has been send to your registerd mobile number and email id</string>
+    <string name="password_description">* Password must be at least 8 characters</string>
+
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="no_internet_available">No Connection Available</string>
+    <string name="no_data_found">No Data Found</string>
+
+    <string name="exit_text">Are you sure you want to exit ?</string>
+
+    <string name="rateus_massage">if you are satisfied with this app then please rate us on google play store.\n</string>
+
+    <string name="passworderror">Enter Some Password</string>
+
+    <string name="tv_add_fv_product">Add Favorite Product</string>
+
+    <string name="tv_product_name">Product Name</string>
+
+    <string name="tv_road">SS 304 Roads</string>
+
+    <string name="tv_size">Size</string>
+
+    <string name="tv_Location">Location</string>
+
+    <string name="tv_fav">Favorite</string>
+
+    <string name="tv_length">Length(mm)</string>
+    <string name="tv_pieces">Pieces</string>
+    <string name="tv_weight">Weight(kg)</string>
+
+    <string name="tv_data_not_found">Data Not Found</string>
+    <string name="tv_resetPassword">Reset Password Link will be shared to your</string>
+    <string name="tv_enter_email_add">Entered Email Address </string>
+    <string name="tv_back_acc">Back to account login?</string>
+    <string name="tv_log_in">Log in</string>
+
+    <string name="tv_otp_verification">Confirm An OTP verification</string>
+    <string name="tv_digit">ENTER 6 DIGIT OTP</string>
+
+    <string name="tv_upload_doc">Upload Documents</string>
+
+    <string name="tv_no_result_found">No Result Found</string>
+
+    <string name="tv_et_hint">Doc 1</string>
+
+    <string name="tv_add_doc">Add Documents</string>
+    <string name="tv_continue">Continue</string>
+
+    <string name="no_grade">No Grades Found</string>
+    <string name="tv_add_new_raw">Add New Raw</string>
+    <string name="tv_submit">Submit</string>
+
+    <string-array name="Size">
+        <item>Apple</item>
+    </string-array>
+
+    <string-array name="master_type">
+        <item>Grade</item>
+        <item>Location</item>
+        <item>Shape</item>
+        <item>Size</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="confirm_otp">Confirm OTP</string>
+    <string name="tv_update_login">Update &amp; Login</string>
+
+    <string name="confirm_add_product">Confirm &amp; Add Product</string>
+    <string name="tv_search_result">Search Result:</string>
+    <string name="tv_save_submit">Save &amp; Submit</string>
+
+
+    <string name="pin_content_desc">PIN input field</string>
+    <string name="pin_label_text">Enter mPIN</string>
+
+    <string name="change_pin">Change mPIN</string>
+    <string name="errase_all">Erase All Data</string>
+    <string name="refresh_records">Refresh Records</string>
+    <string name="tv_sign_up">Sign Up</string>
+    <string name="tv_already_acc">Already have an account?</string>
+    <string name="tv_login">Please Login</string>
+    <string name="tv_first_name">First Name</string>
+    <string name="tv_last_name">Last Name</string>
+    <string name="tv_select_dob">Select DOB</string>
+    <string name="tv_email_address">Email Address</string>
+    <string name="tv_password">Password</string>
+    <string name="tv_confirm_password">Confirm Password</string>
+    <string name="tv_mobile_number">Mobile Number</string>
+    <string name="tv_organization_name">Organization Name</string>
+    <string name="tv_male">Male</string>
+    <string name="tv_female">Female</string>
+    <string name="tv_password_reset">Password reset</string>
+    <string name="tv_your_email">Your Email</string>
+    <string name="tv_sign_in">Sign in</string>
+    <string name="tv_email">Email</string>
+    <string name="tv_save_profile">Save Profile</string>
+    <string name="tv_logout">Logout</string>
+    <string name="tv_enter_pin">Enter PIN</string>
+
+
+</resources>

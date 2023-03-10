@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ganak_background"
+    tools:context=".activity.OutwardDataActivity">
+
+    <TextView
+        android:id="@+id/tv_upload_doc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:text="@string/tv_upload_doc"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_doc_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_upload_doc"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_round_unfilled"
+        android:drawableRight="@drawable/upload_file"
+        android:padding="10dp"
+        android:text="@string/tv_et_hint"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_doc_name"
+        android:layout_margin="30dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/btn_select_doc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_upload_doc"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_round_unfilled"
+            android:drawableRight="@drawable/add_new_doc"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/tv_add_doc"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp" />
+
+
+        <TextView
+            android:id="@+id/btn_upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_upload_doc"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_round_filled"
+            android:drawableRight="@drawable/upload_arrow"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Upload"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btn_continue"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/btn_round_filled"
+            android:padding="10dp"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+</RelativeLayout>

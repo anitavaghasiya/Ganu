@@ -1,0 +1,90 @@
+buildscript {
+    repositories {
+        maven { url 'https://plugins.gradle.org/m2/' }
+    }
+    dependencies {
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:0.12.1'
+    }
+}
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+
+repositories {
+    maven { url 'https://maven.google.com' }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.ganak"
+        minSdkVersion 18
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders = [
+                onesignal_app_id               : 'c189f98a-e01d-4b1a-ba0b-09eee2ea2db2',
+                onesignal_google_project_number: 'REMOTE'
+        ]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:support-v4:28.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+
+    // Circleimageview
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+    //Firebase And Crashlytics
+    implementation 'com.google.firebase:firebase-core:16.0.8'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.9'
+
+    //OneSignal
+    implementation 'com.onesignal:OneSignal:3.10.7'
+
+    //Segmented Control
+    implementation 'info.hoang8f:android-segmented:1.0.6'
+
+    //GSON
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.google.code.gson:gson:2.8.2'
+
+    //Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+
+    //validation
+    implementation 'com.basgeekball:awesome-validation:1.3'
+
+    //FilePicker
+    implementation 'com.nbsp:library:1.8'
+
+    //FilenameUtils
+    implementation group: 'commons-io', name: 'commons-io', version: '2.4'
+
+    implementation 'com.github.mukeshsolanki:android-otpview-pinview:2.0.3'
+
+    implementation 'com.github.ganfra:material-spinner:2.0.0'
+
+    //implementation 'com.jaredrummler:material-spinner:1.3.1'
+
+}
+apply plugin: 'com.google.gms.google-services'

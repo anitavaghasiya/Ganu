@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_dashboard"
+            android:title="DashBoard" />
+        <item
+            android:id="@+id/nav_edit_profile"
+            android:icon="@drawable/edit_profile"
+            android:title="Edit Profile" />
+        <item
+            android:id="@+id/nav_add_products"
+            android:icon="@drawable/ic_add"
+            android:title="Add Products" />
+        <item
+            android:id="@+id/nav_remove_products"
+            android:icon="@drawable/ic_remove"
+            android:title="Remove Products"
+            android:visible="false"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/nav_favourites"
+            android:icon="@drawable/favorite"
+            android:title="Favourite Inward"
+            android:visible="true" />
+        <item
+            android:id="@+id/nav_outward_favourites"
+            android:icon="@drawable/favorite"
+            android:title="Favourite Outward"
+            android:visible="true" />
+        <item
+            android:id="@+id/nav_add_master"
+            android:icon="@drawable/ic_add"
+            android:title="Add Master"
+            android:visible="true" />
+        <item
+            android:id="@+id/nav_report"
+            android:icon="@drawable/ic_report"
+            android:title="Report"
+            android:visible="true" />
+        <item
+            android:id="@+id/nav_change__password"
+            android:icon="@drawable/password"
+            android:title="Change Password" />
+        <item
+            android:id="@+id/nav_about_us"
+            android:icon="@drawable/about_us"
+            android:title="About Us"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_share"
+            android:title="Share"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_rate_us"
+            android:icon="@drawable/ic_rateus"
+            android:title="Rate Us"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/ic_exit_to_app"
+            android:title="Exit"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout" />
+    </group>
+
+</menu>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "546880944285",
+    "firebase_url": "https://ganak-73d98.firebaseio.com",
+    "project_id": "ganak-73d98",
+    "storage_bucket": "ganak-73d98.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:546880944285:android:6c8ed3ba59d4b0a5",
+        "android_client_info": {
+          "package_name": "com.ganak"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "546880944285-59efjilihu3it4cv355bqmbd3duv3arv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0qfM3x6fPHyLliDHCBIp9P4KUivZ33dU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "546880944285-59efjilihu3it4cv355bqmbd3duv3arv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

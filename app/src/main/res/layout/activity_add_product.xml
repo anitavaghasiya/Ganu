@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ganak_background"
+    tools:context=".activity.AddProductActivity">
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/btn_round_unfilled"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:icon="@drawable/ic_star"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search For Grade"
+        android:searchIcon="@drawable/ic_search"
+        android:windowSoftInputMode="stateAlwaysHidden"
+        app:queryBackground="@android:color/transparent" />
+
+    <TextView
+        android:id="@+id/tv_add_fv_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchView"
+        android:layout_marginRight="10dp"
+        android:gravity="right"
+        android:padding="5dp"
+        android:text="@string/tv_add_fv_product"
+        android:textColor="@color/colorAccent"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/tv_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_add_fv_product"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:gravity="left"
+        android:padding="5dp"
+        android:text="@string/tv_product_name"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:id="@+id/lnl_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_product_name"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/tv_pro_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_add_fv_product"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/tv_road"
+                android:textColor="@color/colorAccent"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/img_fav"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:src="@drawable/ic_star" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/sn_size"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/spinner_background"
+                android:focusable="true"
+                android:scrollbars="vertical"
+                android:spinnerMode="dropdown" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/sn_location"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/spinner_background"
+                android:focusable="true"
+                android:scrollbars="vertical"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lnl_product"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/tv_length"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_add_fv_product"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_round_filled"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/tv_length"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv_pieces"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_add_fv_product"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_round_filled"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/tv_pieces"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_add_fv_product"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_round_filled"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/tv_weight"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+    </LinearLayout>
+</RelativeLayout>
